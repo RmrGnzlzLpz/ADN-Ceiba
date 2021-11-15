@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="col-auto">
+        <button (click)="goBack()" class="btn btn-outline-secondary mb-3">Back</button>
+    </div>
+    <div class="row g-3">
+        <div class="col-auto">
+            <label for="inputLicense" class="visually-hidden">License</label>
+            <input type="text" [(ngModel)]="license" name="license" class="div-control" id="inputLicense"
+                placeholder="License">
+        </div>
+        <div class="col-auto">
+            <button *ngIf="license?.length" (click)="takeOut()" class="btn btn-outline-danger mb-3">Take Out</button>
+        </div>
+        <div class="col-auto">
+            <a *ngIf="response" class="btn btn-outline-success mb-3" routerLink="/history/{{license}}">History</a>
+        </div>
+    </div>
+</div>

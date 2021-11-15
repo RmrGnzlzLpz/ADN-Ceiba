@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+	  <ProjectGuid>{64c515cf-dd17-49c7-a32e-781bd4293271}</ProjectGuid>
+  </PropertyGroup>
+
+</Project>

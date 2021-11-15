@@ -1,0 +1,44 @@
+<div class="container">
+    <h1>Parking</h1>
+    <div class="row">
+        <table *ngIf="parkingConfiguration" class="table table-hover">
+            <caption>Parking Configuration</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Property</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cost of parkingConfiguration.dayCost">
+                    <th scope="row">Day {{cost.key}} Cost</th>
+                    <td>{{cost.value}}</td>
+                </tr>
+                <tr *ngFor="let cost of parkingConfiguration.hourCost">
+                    <th scope="row">Hour {{cost.key}} Cost</th>
+                    <td>{{cost.value}}</td>
+                </tr>
+                <tr *ngFor="let cost of parkingConfiguration.extraCost">
+                    <th scope="row">Extra {{cost.key}} Cost</th>
+                    <td>{{cost.value}}</td>
+                </tr>
+                <tr *ngFor="let cost of parkingConfiguration.extraCostCylinderCapacity">
+                    <th scope="row">Extra {{cost.key}} Cost Cylinder Capacity</th>
+                    <td>{{cost.value}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Number Of Hours As Day</th>
+                    <td>{{parkingConfiguration.numberOfHoursAsDay}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Number Of Hours Per Day</th>
+                    <td>{{parkingConfiguration.numberOfHoursPerDay}}</td>
+                </tr>
+                <tr *ngFor="let cost of parkingConfiguration.totalCells">
+                    <th scope="row">Total cells for {{cost.key}}</th>
+                    <td>{{cost.value}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

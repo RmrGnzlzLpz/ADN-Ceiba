@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	<ProjectGuid>{49731185-b5c0-4479-99a7-677b4b248b38}</ProjectGuid>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Automapper" Version="10.1.1" />
+    <PackageReference Include="MediaTR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Estacionamiento.Domain\Estacionamiento.Domain.csproj" />
+    <ProjectReference Include="..\Estacionamiento.Infrastructure\Estacionamiento.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Parking\Commands\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row g-3">
+        <div class="mb-3 col-auto">
+            <label for="licenseVehicle" class="form-label">License Vehicle</label>
+            <input [(ngModel)]="vehicle.license" type="text" class="form-control" id="licenseVehicle" required
+                minlength="6">
+        </div>
+        <div class="mb-3 col-auto">
+            <label for="cylinderCapacity" class="form-label">Cylinder Capacity</label>
+            <input [(ngModel)]="vehicle.cylinderCapacity" required type="number" class="form-control" id="cylinderCapacity">
+        </div>
+        <div class="mb-3 col-auto">
+            <label for="vehicleType" class="form-label">Vehicle Type</label>
+            <select [(ngModel)]="vehicle.type" class="form-select" id="vehicleType">
+                <option [ngValue]="0">Car</option>
+                <option [ngValue]="1">Motorcycle</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-auto">
+            <button (click)="parkVehicle()" class="btn btn-outline-primary mb-3">Park</button>
+        </div>
+        <div class="col-auto">
+            <button (click)="goBack()" class="btn btn-outline-secondary mb-3">Back</button>
+        </div>
+
+        <div class="col-auto">
+            <a *ngIf="response" class="btn btn-outline-success mb-3" routerLink="/history/{{vehicle.license}}">History</a>
+        </div>
+    </div>
+</div>

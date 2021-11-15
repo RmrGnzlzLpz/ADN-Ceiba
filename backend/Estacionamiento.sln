@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estacionamiento.Api", "Estacionamiento.Api\Estacionamiento.Api.csproj", "{01361D69-A49A-4D4B-8F06-A1AED24912D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estacionamiento.Domain", "Estacionamiento.Domain\Estacionamiento.Domain.csproj", "{64C515CF-DD17-49C7-A32E-781BD4293271}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estacionamiento.Infrastructure", "Estacionamiento.Infrastructure\Estacionamiento.Infrastructure.csproj", "{BF1780FD-5AB5-431F-B8F3-56C3460938AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estacionamiento.Application", "Estacionamiento.Application\Estacionamiento.Application.csproj", "{49731185-B5C0-4479-99A7-677B4B248B38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estacionamiento.Domain.Tests", "Estacionamiento.Domain.Tests\Estacionamiento.Domain.Tests.csproj", "{C8C9F02F-0D62-41E3-B96F-CEB53287ABFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estacionamiento.Api.Tests", "Estacionamiento.Api.Tests\Estacionamiento.Api.Tests.csproj", "{896599E2-470E-4F5F-AF33-36E3A574DBFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01361D69-A49A-4D4B-8F06-A1AED24912D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01361D69-A49A-4D4B-8F06-A1AED24912D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01361D69-A49A-4D4B-8F06-A1AED24912D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01361D69-A49A-4D4B-8F06-A1AED24912D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C515CF-DD17-49C7-A32E-781BD4293271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C515CF-DD17-49C7-A32E-781BD4293271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C515CF-DD17-49C7-A32E-781BD4293271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C515CF-DD17-49C7-A32E-781BD4293271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF1780FD-5AB5-431F-B8F3-56C3460938AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1780FD-5AB5-431F-B8F3-56C3460938AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1780FD-5AB5-431F-B8F3-56C3460938AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1780FD-5AB5-431F-B8F3-56C3460938AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49731185-B5C0-4479-99A7-677B4B248B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49731185-B5C0-4479-99A7-677B4B248B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49731185-B5C0-4479-99A7-677B4B248B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49731185-B5C0-4479-99A7-677B4B248B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C9F02F-0D62-41E3-B96F-CEB53287ABFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C9F02F-0D62-41E3-B96F-CEB53287ABFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C9F02F-0D62-41E3-B96F-CEB53287ABFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C9F02F-0D62-41E3-B96F-CEB53287ABFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896599E2-470E-4F5F-AF33-36E3A574DBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896599E2-470E-4F5F-AF33-36E3A574DBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896599E2-470E-4F5F-AF33-36E3A574DBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896599E2-470E-4F5F-AF33-36E3A574DBFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78002B17-4838-4B34-93AD-F0AD5ACE621F}
+	EndGlobalSection
+EndGlobal

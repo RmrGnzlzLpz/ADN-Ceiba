@@ -1,0 +1,43 @@
+<div class="container">
+    <button class="btn btn-outline-secondary float-right" (click)="goBack()">Back</button>
+    <div *ngIf="vehicle">
+        <div class="row">
+            <p class="fs-1">License: {{vehicle.license}}</p>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover text-nowrap">
+                <caption>History of Vehicle ({{currentPage}} of {{totalPages()}})</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Entry Date</th>
+                        <th scope="col">Exit Date</th>
+                        <th scope="col">Days</th>
+                        <th scope="col">Hours</th>
+                        <th scope="col">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let history of currentEntities()">
+                        <td>{{history.entryDate | date:'short'}}</td>
+                        <td>{{history.exitDate | date:'short'}}</td>
+                        <td>{{history.days}}</td>
+                        <td>{{history.hours}}</td>
+                        <td>{{history.value}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item" [ngClass]="{'disabled': currentPage <=1}">
+                        <button class="page-link" (click)="previousPage()">Previous</button>
+                    </li>
+                    <li class="page-item" [ngClass]="{'disabled': currentPage >= totalPages()}">
+                        <button class="page-link" (click)="nextPage()">Next</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
